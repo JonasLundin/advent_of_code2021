@@ -5,7 +5,6 @@ numbers = [ int(x) for x in content_list ]
 
 def part1():
     k = 0
-
     for i, j in enumerate(numbers):
         if j > numbers[i - 1]:
             k += 1  
@@ -13,7 +12,6 @@ def part1():
 
 def part2():
     k = 0
-
     for i, j in enumerate(numbers):
         if i == len(numbers) - 3:
             break
@@ -23,6 +21,6 @@ def part2():
             k += 1 
 
     print(f"Part2: {k}")
+
 part1()
 part2()
-
