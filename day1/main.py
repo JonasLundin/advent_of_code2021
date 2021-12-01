@@ -19,7 +19,6 @@ def part2():
         b = numbers[i + 1] + numbers[i + 2] + numbers[i + 3]
         if b > a:
             k += 1 
-
     print(f"Part2: {k}")
 
 part1()
