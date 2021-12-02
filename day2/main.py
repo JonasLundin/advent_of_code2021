@@ -9,9 +9,9 @@ def part1():
         command = tuple[0]
         value = tuple[1]
         if command == "down":
-            depth = depth + int(value)
+            depth += int(value)
         elif command == "up":
-            depth = depth - int(value)
+            depth -= int(value)
         else:
             horizonal_position = horizonal_position + int(value)
     print(f"Depth: {depth}. Horizontal position {horizonal_position}")
@@ -26,12 +26,12 @@ def part2():
         command = tuple[0]
         value = tuple[1]
         if command == "down":
-            aim = aim + int(value)
+            aim += int(value)
         elif command == "up":
-            aim = aim - int(value)
+            aim -= int(value)
         else:
             horizonal_position = horizonal_position + int(value)
-            depth = depth + aim*int(value)
+            depth += aim*int(value)
     print(f"Depth: {depth}. Horizontal position {horizonal_position}. Aim: {aim}")
     print(f"Result: {depth * horizonal_position}.")
 part1()
