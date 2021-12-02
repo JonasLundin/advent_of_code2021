@@ -1,4 +1,4 @@
-with open("input_test.txt") as load_file:
+with open("input.txt") as load_file:
     data = [tuple(line.split()) for line in load_file]
 
 depth = 0
@@ -13,4 +13,6 @@ for i, tuple in enumerate(data):
     elif command == "up":
         depth = depth - int(value)
     else:
-        horizonal_position = horizonal_position + value
+        horizonal_position = horizonal_position + int(value)
+print(f"Depth: {depth}. Horizontal position {horizonal_position}")
+print(f"Result: {depth * horizonal_position}.")
