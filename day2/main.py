@@ -13,7 +13,7 @@ def part1():
         elif command == "up":
             depth -= int(value)
         else:
-            horizonal_position = horizonal_position + int(value)
+            horizonal_position += int(value)
     print(f"Depth: {depth}. Horizontal position {horizonal_position}")
     print(f"Result: {depth * horizonal_position}.")
 
@@ -30,7 +30,7 @@ def part2():
         elif command == "up":
             aim -= int(value)
         else:
-            horizonal_position = horizonal_position + int(value)
+            horizonal_position += int(value)
             depth += aim*int(value)
     print(f"Depth: {depth}. Horizontal position {horizonal_position}. Aim: {aim}")
     print(f"Result: {depth * horizonal_position}.")
