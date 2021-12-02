@@ -32,7 +32,7 @@ def part2():
         else:
             horizonal_position = horizonal_position + int(value)
             depth = depth + aim*int(value)
-    print(f"Depth: {depth}. Horizontal position {horizonal_position}")
+    print(f"Depth: {depth}. Horizontal position {horizonal_position}. Aim: {aim}")
     print(f"Result: {depth * horizonal_position}.")
 part1()
 part2()
